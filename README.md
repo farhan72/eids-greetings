@@ -1,11 +1,12 @@
 # Eid Greetings - Ucapan Selamat Hari Raya Idul Fitri
 
 ![Eid Greetings](https://img.shields.io/badge/Eid-Greetings-green)
-![Next.js](https://img.shields.io/badge/Next.js-13-black)
-![React](https://img.shields.io/badge/React-18-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black)
+![React](https://img.shields.io/badge/React-19.0.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![Tailwind CSS](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+![Tailwind CSS](https://img.shields.io/badge/tailwindcss-4.0.0-0F172A?&logo=tailwindcss)
 ![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?logo=framer&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-3.12.7-green)
 
 Aplikasi web interaktif untuk mengirimkan ucapan Selamat Hari Raya Idul Fitri dengan animasi, musik, dan amplop digital yang dapat dibuka.
 
@@ -13,18 +14,20 @@ Aplikasi web interaktif untuk mengirimkan ucapan Selamat Hari Raya Idul Fitri de
 
 - **Amplop Digital Interaktif**: Klik untuk membuka amplop dan melihat ucapan random
 - **Musik Latar**: Musik otomatis diputar saat amplop dibuka
-- **Animasi Menarik**: Menggunakan Framer Motion untuk animasi yang halus
+- **Animasi Menarik**: Menggunakan Framer Motion dan GSAP untuk animasi yang halus
 - **Responsif**: Tampilan yang optimal di desktop dan mobile
 - **Ucapan Random**: Setiap kali amplop dibuka, ucapan yang ditampilkan akan berbeda
 
 ## 🚀 Teknologi
 
-- **Next.js 13**: Framework React modern dengan fitur App Router
-- **React 18**: Library UI untuk membangun antarmuka pengguna
-- **TypeScript**: Superset JavaScript dengan fitur type safety
-- **Tailwind CSS**: Framework CSS utility-first untuk styling
-- **Framer Motion**: Library animasi untuk React
-- **Heroicons**: Kumpulan ikon yang indah
+- **Next.js 15.2.4**: Framework React modern dengan fitur App Router
+- **React 19.0.0**: Library UI untuk membangun antarmuka pengguna
+- **TypeScript 5**: Superset JavaScript dengan fitur type safety
+- **Tailwind CSS 4**: Framework CSS utility-first untuk styling
+- **Framer Motion 12.6.3**: Library animasi untuk React
+- **GSAP 3.12.7**: Library animasi untuk efek visual yang lebih kompleks
+- **Howler.js 2.2.4**: Library untuk manajemen audio yang lebih baik
+- **Heroicons 2.2.0**: Kumpulan ikon yang indah
 
 ## 🛠️ Instalasi
 
@@ -114,7 +117,7 @@ Kontribusi selalu diterima! Silakan buat pull request atau buka issue untuk disk
 
 ## 📞 Kontak
 
-Jika Anda memiliki pertanyaan atau saran, silakan hubungi [alfiibnu84@gmail.com](alfiibnu84@gmail.com).
+Jika Anda memiliki pertanyaan atau saran, silakan hubungi [alfiibnu84@gmail.com](mailto:alfiibnu84@gmail.com).
 
 ---
 
