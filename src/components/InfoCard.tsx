@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 
 interface InfoCardProps {
@@ -27,4 +28,4 @@ const InfoCard = ({ title, content, delay, direction }: InfoCardProps) => {
   );
 };
 
-export default InfoCard; 
+export default memo(InfoCard); 

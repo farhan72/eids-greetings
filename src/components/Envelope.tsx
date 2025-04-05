@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
 import { Greeting } from '../types';
@@ -50,4 +51,4 @@ const Envelope = ({ isOpen, onOpen, currentGreeting, title }: EnvelopeProps) => 
   );
 };
 
-export default Envelope; 
+export default memo(Envelope); 
