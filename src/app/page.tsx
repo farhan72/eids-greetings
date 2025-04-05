@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
+import Lottie from 'lottie-react';
+import eidAnimation from '../../public/animations-lottie/eid-mubarak.json';
 import greetings from '../data/greetings.json';
 
 interface Greeting {
@@ -14,6 +16,7 @@ export default function Home() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
   const [currentGreeting, setCurrentGreeting] = useState<Greeting>(greetings.greetings[0]);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const getRandomGreeting = () => {
     const randomIndex = Math.floor(Math.random() * greetings.greetings.length);
@@ -22,6 +25,19 @@ export default function Home() {
 
   useEffect(() => {
     setCurrentGreeting(getRandomGreeting());
+
+    return () => {
+      setCurrentGreeting(greetings.greetings[0]);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Simulasi loading untuk splash screen
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    
+    return () => clearTimeout(timer);
   }, []);
 
   const openEnvelope = () => {
@@ -39,6 +55,48 @@ export default function Home() {
         loop
         className="hidden"
       />
+      
+      {/* Splash Screen */}
+      <AnimatePresence>
+        {isLoading && (
+          <motion.div
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-b from-green-100 to-green-200"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <div className="mb-4">
+                <Lottie 
+                  animationData={eidAnimation} 
+                  loop={true}
+                  style={{ width: 200, height: 200 }}
+                />
+              </div>
+              <p className="text-green-600">Selamat Hari Raya Idul Fitri</p>
+              <div className="mt-4 flex justify-center">
+                <motion.div
+                  animate={{ 
+                    width: ["0%", "100%"],
+                    opacity: [0.5, 1, 0.5]
+                  }}
+                  transition={{ 
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop"
+                  }}
+                  className="h-1 w-48 bg-green-500 rounded-full"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       
       <div className="container mx-auto px-4 py-8 md:py-16">
         <motion.div
@@ -104,8 +162,7 @@ export default function Home() {
               Doa Hari Raya
             </h2>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-              Allahumma laka sumtu wa &apos;ala rizqika aftartu wa &apos;alaika tawakkaltu
-              wa bika aamantu. Ya Karim, ya Karim, ya Karim.
+              Taqabbalallaahi minnaa wa minkum taqabbal yaa kariim, wa ja’alanaallaahu wa iyyaakum minal ‘aaidin wal faaiziin wal maqbuulin kullu ‘aamin wa antum bi khair.
             </p>
           </motion.div>
 
