@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
-import { Greeting } from '../types';
+import { Greeting } from '@/types';
 
 interface EnvelopeProps {
   isOpen: boolean;

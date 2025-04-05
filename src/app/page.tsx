@@ -2,15 +2,15 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import greetings from '../data/greetings.json';
-import { Greeting } from '../types';
+import greetings from '@/data/greetings.json';
+import { Greeting } from '@/types';
 
 // Import komponen
-import SplashScreen from '../components/SplashScreen';
-import Envelope from '../components/Envelope';
-import InfoCard from '../components/InfoCard';
-import Stars from '../components/Stars';
-import Copyright from '../components/Copyright';
+import SplashScreen from '@/components/SplashScreen';
+import Envelope from '@/components/Envelope';
+import InfoCard from '@/components/InfoCard';
+import Stars from '@/components/Stars';
+import Copyright from '@/components/Copyright';
 
 export default function Home() {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);

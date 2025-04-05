@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import eidAnimation from '../../public/animations-lottie/eid-mubarak.json';
@@ -14,17 +15,17 @@ const SplashScreen = () => {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center"
+        className="text-center px-4"
       >
-        <div className="mb-4">
+        <div className="mb-2 md:mb-4 w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto">
           <Lottie 
             animationData={eidAnimation} 
             loop={true}
-            style={{ width: 200, height: 200 }}
+            className="w-full h-full"
           />
         </div>
-        <p className="text-green-600">Selamat Hari Raya Idul Fitri</p>
-        <div className="mt-4 flex justify-center">
+        <p className="text-base md:text-lg text-green-600 font-medium">Selamat Hari Raya Idul Fitri</p>
+        <div className="mt-2 md:mt-4 flex justify-center">
           <motion.div
             animate={{ 
               width: ["0%", "100%"],
@@ -35,7 +36,7 @@ const SplashScreen = () => {
               repeat: Infinity,
               repeatType: "loop"
             }}
-            className="h-1 w-48 bg-green-500 rounded-full"
+            className="h-1 w-32 md:w-48 bg-green-500 rounded-full"
           />
         </div>
       </motion.div>
@@ -43,4 +44,4 @@ const SplashScreen = () => {
   );
 };
 
-export default SplashScreen; 
+export default memo(SplashScreen); 
