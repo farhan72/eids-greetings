@@ -4,8 +4,8 @@
 ![Next.js](https://img.shields.io/badge/Next.js-13-black)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-3-blue)
-![Framer Motion](https://img.shields.io/badge/Framer-Motion-10-blue)
+![Tailwind CSS](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?logo=framer&logoColor=white)
 
 Aplikasi web interaktif untuk mengirimkan ucapan Selamat Hari Raya Idul Fitri dengan animasi, musik, dan amplop digital yang dapat dibuka.
 
@@ -25,10 +25,6 @@ Aplikasi web interaktif untuk mengirimkan ucapan Selamat Hari Raya Idul Fitri de
 - **Tailwind CSS**: Framework CSS utility-first untuk styling
 - **Framer Motion**: Library animasi untuk React
 - **Heroicons**: Kumpulan ikon yang indah
-
-## 📸 Tampilan
-
-![Eid Greetings Screenshot](https://via.placeholder.com/800x450.png?text=Eid+Greetings+Screenshot)
 
 ## 🛠️ Instalasi
 
