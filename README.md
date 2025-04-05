@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eid Greetings - Ucapan Selamat Hari Raya Idul Fitri
 
-## Getting Started
+![Eid Greetings](https://img.shields.io/badge/Eid-Greetings-green)
+![Next.js](https://img.shields.io/badge/Next.js-13-black)
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-3-blue)
+![Framer Motion](https://img.shields.io/badge/Framer-Motion-10-blue)
 
-First, run the development server:
+Aplikasi web interaktif untuk mengirimkan ucapan Selamat Hari Raya Idul Fitri dengan animasi, musik, dan amplop digital yang dapat dibuka.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Fitur
+
+- **Amplop Digital Interaktif**: Klik untuk membuka amplop dan melihat ucapan random
+- **Musik Latar**: Musik otomatis diputar saat amplop dibuka
+- **Animasi Menarik**: Menggunakan Framer Motion untuk animasi yang halus
+- **Responsif**: Tampilan yang optimal di desktop dan mobile
+- **Ucapan Random**: Setiap kali amplop dibuka, ucapan yang ditampilkan akan berbeda
+
+## 🚀 Teknologi
+
+- **Next.js 13**: Framework React modern dengan fitur App Router
+- **React 18**: Library UI untuk membangun antarmuka pengguna
+- **TypeScript**: Superset JavaScript dengan fitur type safety
+- **Tailwind CSS**: Framework CSS utility-first untuk styling
+- **Framer Motion**: Library animasi untuk React
+- **Heroicons**: Kumpulan ikon yang indah
+
+## 📸 Tampilan
+
+![Eid Greetings Screenshot](https://via.placeholder.com/800x450.png?text=Eid+Greetings+Screenshot)
+
+## 🛠️ Instalasi
+
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/yourusername/eid-greetings.git
+   cd eid-greetings
+   ```
+
+2. Install dependensi:
+   ```bash
+   npm install
+   # atau
+   yarn install
+   # atau
+   pnpm install
+   ```
+
+3. Jalankan server development:
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   # atau
+   pnpm dev
+   ```
+
+4. Buka [http://localhost:3000](http://localhost:3000) di browser Anda untuk melihat hasilnya.
+
+## 📁 Struktur Proyek
+
+```
+eid-greetings/
+├── public/
+│   └── sounds/
+│       └── eid-music.mp3
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── data/
+│       └── greetings.json
+├── .gitignore
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Kustomisasi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Menambah Ucapan Baru
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Untuk menambah ucapan baru, edit file `src/data/greetings.json`:
 
-## Learn More
+```json
+{
+  "title": "Selamat Hari Raya Idul Fitri",
+  "greetings": [
+    {
+      "content": "Ucapan baru Anda di sini..."
+    },
+    // Ucapan lainnya...
+  ]
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Mengganti Musik
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Untuk mengganti musik, ganti file `public/sounds/eid-music.mp3` dengan file musik baru Anda.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Penggunaan Mobile
 
-## Deploy on Vercel
+Aplikasi ini sepenuhnya responsif dan dapat diakses dari perangkat mobile. Pastikan untuk mengaktifkan suara di perangkat Anda untuk mendengarkan musik saat membuka amplop.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima! Silakan buat pull request atau buka issue untuk diskusi.
+
+## 📞 Kontak
+
+Jika Anda memiliki pertanyaan atau saran, silakan hubungi [alfiibnu84@gmail.com](alfiibnu84@gmail.com).
+
+---
+
+Dibuat dengan ❤️ untuk merayakan Hari Raya Idul Fitri
