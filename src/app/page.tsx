@@ -104,7 +104,7 @@ export default function Home() {
               Doa Hari Raya
             </h2>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-              Allahumma laka sumtu wa 'ala rizqika aftartu wa 'alaika tawakkaltu
+              Allahumma laka sumtu wa &apos;ala rizqika aftartu wa &apos;alaika tawakkaltu
               wa bika aamantu. Ya Karim, ya Karim, ya Karim.
             </p>
           </motion.div>
